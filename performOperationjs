@@ -1,0 +1,27 @@
+function performoperation(operation, a, b) {
+    let c;
+    switch (operation) {
+        case "+":
+            c = a + b;
+            console.log(c);
+            break;
+        case "-":
+            c = a - b;
+            console.log(c);
+            break;
+        case "*":
+            c = a * b;
+            console.log(c);
+            break;
+        default:
+            console.log('Invalid operation');
+            return;
+    }
+    return c; 
+}
+
+let operation = "+"; 
+let a=15;
+let b=2;
+let result = performoperation(operation, a, b);
+console.log(result);
