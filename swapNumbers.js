@@ -1,4 +1,4 @@
-let num1=6;
+//swap two numbers 
 num2=7;
 let temp
 temp = num1
