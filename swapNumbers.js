@@ -1,4 +1,5 @@
 //swap two numbers 
+let num1=5;
 num2=7;
 let temp
 temp = num1
