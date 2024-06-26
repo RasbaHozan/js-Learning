@@ -1,6 +1,7 @@
-let a = 6 ;
+//"Write a program that have two variables a and b, and a string operation (+,_ or *)
+let a = 6;
 b = 1 ; 
-operation = "-" ;
+operation = "+" ;
 let c ;
 if (operation == "+") {
     console.log(c=a+b);
@@ -8,4 +9,4 @@ if (operation == "+") {
     console.log(c=a-b);
 } else if (operation == "*") {
     console.log(c=a*b);
-}
+} 

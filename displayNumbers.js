@@ -1,6 +1,4 @@
-function displayNumbers(input) {
-    for (let i = 0; i <= 10; i++) {
-        console.log(i);
-    }
+// display numbers from 1 to 10
+for (i = 1 ; i <= 10 ; i++) {
+    console.log(i);
 }
-displayNumbers(10);

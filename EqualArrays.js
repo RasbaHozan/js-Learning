@@ -1,17 +1,9 @@
-function checkEqualArrays(arr1, arr2) {
-    if (arr1.length !== arr2.length) {
-        return false;
-    }
-    for (let i = 0; i < arr1.length; i++) {
-        if (arr1[i] !== arr2[i]) {
-            return false;
-        }
-    }
-    return true;
-}
-const array1 = [8, 9, 10];
-const array2 = [4, 5, 6];
-const array3 = [8, 9, 10];
+//Write a program to check if two arrays are equal
 
-console.log(checkEqualArrays(array1, array2)); // Output: true
-console.log(checkEqualArrays(array1, array3)); // Output: false
+let array1 =[1, 2, 3]
+array2 =[7, 8, 9]
+if ( array1 == array2) {
+console.log("array1 is equal to array2")
+} else {
+console.log("array1 is not equal to array2")
+}
