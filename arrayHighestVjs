@@ -1,0 +1,9 @@
+ //find highest value in Array
+ let arr=[2,8,5];
+ let highestNum = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > highestNum) {
+            highestNum = arr[i];
+        }
+    }
+console.log(highestNum)

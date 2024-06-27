@@ -1,5 +1,3 @@
-function arrayLength(arr) {
-    return arr.length;
-}
-const arr = [1, 3, 5, 7, 9, 11, 13, 15];
-console.log("The length of the array is:", arr.length);
+// find the length of array
+let arr=[2, 3, 5, 7];
+console.log(arr.length)

@@ -1,7 +1,7 @@
 //find factorial of a number 
-let num=0;
+let num=3;
 factorial=1;
-        for (let i = 1; i < num+1; i++) {
+        for (let i = 1; i <= num; i++) {
             factorial *= i;
         }
         console.log(factorial)
