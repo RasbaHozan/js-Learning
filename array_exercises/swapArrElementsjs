@@ -1,0 +1,8 @@
+//Write a program to swap two elements of array at position a and b
+let array =[8,7,4,5];
+let a =1;
+let b = 2;
+if (a >= 0 && a < array.length && b >= 0 && b < array.length) {
+    [array[a], array[b]] = [array[b], array[a]];
+    console.log(array)
+ }
