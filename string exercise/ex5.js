@@ -1,14 +1,16 @@
 //write a function to convert string into upper and lower case 
 function convertCase(str) {
-    let lowercaseStr = str.toLowerCase();
-    let uppercaseStr = str.toUpperCase();
-
+    let lowerCaseStr = str.toLowerCase();
+    let upperCaseStr = str.toUpperCase();
+for (let i = 0;i<str.length;i++) {
+    lowerCaseStr;
+    upperCaseStr;
+}
     return {
-         lowercaseStr,
-         uppercaseStr
+         lowerCaseStr,
+         upperCaseStr
     }
 }
 
 let str = "Apple is red";
-let converted = convertCase(str);
 console.log(convertCase(str))
