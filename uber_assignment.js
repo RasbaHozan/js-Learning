@@ -15,7 +15,7 @@ function totalFuelCost(ridesFaresEarned) {
     let totalFuelCost = 0;
     let len = ridesFaresEarned.length;
     for (let i = 0; i < len; i++) {
-        totalFuelCost += ridesFaresEarned[i] * 0.20 ;
+        totalFuelCost += ridesFaresEarned[i] * 0.2 ;
     }
     return totalFuelCost;
 }
@@ -85,9 +85,9 @@ let rideFaresEarned = [20,50,30,34,12];
 function totalMilesDriven(rideFaresEarned) {
     let totalMiles = 0;
     for (let i = 0; i < rideFaresEarned.length; i++) {
-        totalMiles += rideFaresEarned[i];
+        totalMiles += rideFaresEarned[i] / 2;
     }
-    return totalMiles / 2; 
+    return totalMiles; 
 }
 
 
@@ -126,8 +126,7 @@ function removeDuplicateFares(rideFaresEarned) {
         }
         // If fare is not a duplicate, add it to uniqueFares
         if (duplicateFare == false) {
-       uniqueFares[uniqueIndex] = fare ;
-            uniqueIndex++;
+       uniqueFares[uniqueIndex++] = rideFaresEarned[i] ;
         }
     }
 
