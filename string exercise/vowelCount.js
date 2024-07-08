@@ -2,12 +2,13 @@
 
 function countVowels(str) {
   str = str.toLowerCase();
-let vowelCount ={'a':0,'e':0,'i':0,'o':0,'u':0}
+  let vowelCount=0;
+let vowel="aeiou";
 
   for (let i=0;i<str.length;i++) {
    let char=str[i];
-  if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') {
- vowelCount[char]++;
+  if (char == vowel[i]) {
+ vowelCount++;
   }
   }
   return vowelCount;
