@@ -8,5 +8,5 @@ function reverseStr(str) {
  }
  return reversedStr;
 }
-let str="my name is mahnoor";
+let str="my name is rasba";
 console.log(reverseStr(str))
