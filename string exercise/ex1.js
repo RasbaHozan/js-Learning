@@ -9,6 +9,6 @@ function countOccurrences(str, char) {
     }
     return count;
 }
-let str = "my name is mahnoor";
+let str = "my name is rasba";
 let char = 'o';
 console.log(countOccurrences(str, char))

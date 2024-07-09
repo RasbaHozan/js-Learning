@@ -10,5 +10,5 @@ let char = 'm' ;
   }
   return filteredStr;
 }
- let str = 'my name is mahnoor';
+ let str = 'my name is rasba';
     console.log(removeChar(str))

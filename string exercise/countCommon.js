@@ -1,14 +1,17 @@
 function countCommon(str1,str2) {
  let commonCount=0;
- for (let i=0;i<str1.length;i++) {
-  for ( let j=0;j<str2.length;j++) {
+ for (let i=0;i<=str1.length-1;i++) {
+  let commonFound = false;
+  for ( let j=0;j<=str2.length-1;j++) {
    if (str1[i] == str2[j]) {
-    commonCount++;
-    str2 = str2.slice(0,j) + str2.slice(j+1);
+    commonFound=true;
   break;
    }
+  } 
+  if(commonFound  ==  true) {
+    commonCount++ ; 
   }
- }
+}
  return commonCount;
 }
 let mainStr1 = "aabcc" ;

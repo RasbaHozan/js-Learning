@@ -1,14 +1,29 @@
-//write function to count vowel in a string
+//write  a function to count vowels in a string 
 function vowelCount(str) {
-let vowelCount = 0;
-let vowel= "aeiou";
-for (let i=0;i<str.length;i++) {
- let char = str[i];
- if ( vowel.includes(char)) {
-  vowelCount++;
- }
+ 
+  let vowels = "aeiou";
+  let vowelCount = 0;
+
+  // Iterate through each character in the string
+  for (let i = 0; i < str.length; i++) {
+    let vowelFound= false;
+  
+    // Iterate through each vowel in the vowels string
+    for (let j = 0; j < vowels.length; j++) {
+      // Check if the current character matches any vowel
+      if (str[i] == vowels[j]) {
+        vowelFound = true;
+        break; 
+      }
+    }
+    
+    // If current character is a vowel, increment the vowel count
+    if (vowelFound == true) {
+      vowelCount++;
+    }
+  }
+  return vowelCount;
 }
-return vowelCount;
-}
-let str="apple,orange";
-console.log(vowelCount(str))
+
+let str = "my name is rasba";
+console.log(vowelCount(str));
