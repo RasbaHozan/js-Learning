@@ -1,25 +1,29 @@
+//write  a function to reverse each word of string
 function reverseWords(str) {
-  let word =""; 
-  let reversedStr= "";
-  
-  for (let i=0; i< str.length; i++) {
-   if (str[i] == " ") {
-    reversedStr += reverseWord(word)+ " ";
-    word =""; 
-   } else {
-    word += str[i];
-   }
-  }
-  reversedStr += reverseWord(word);
-return reversedStr;
- }
+    let result = '';
+    let wordStart = 0;
+    let wordEnd = 0;
 
-  function reverseWord(word) {
-   let reversedWord ="";
-   for (let i=word.length - 1;i>=0;i--) {
-    reversedWord += word[i];
-   }
-   return reversedWord;
-  }
- let str = "apple is red";
- console.log(reverseWords(str))
+    for (let i = 0; i <= str.length; i++) {
+        // Check for end of word or end of string
+        if (str[i] == ' ' || i == str.length) {
+            wordEnd = i - 1;
+            // Reverse the current word
+            for (let j = wordEnd; j >= wordStart; j--) {
+                result += str[j];
+            }
+            // Add space if it's not the last word
+            if (i !== str.length) {
+                result += ' ';
+            }
+            // Move to the start of the next word
+            wordStart = i + 1;
+        }
+    }
+
+    return result;
+}
+
+let inputString = "apple is red";
+let result = reverseWords(inputString);
+console.log(result);
