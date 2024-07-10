@@ -1,6 +1,6 @@
  function checkWordPresence(str) {
     let substringSize=substring.length;
-     for (let i = 0; i <= str.length - substring.length; i++) {
+     for (let i = 0; i <= str.length-1; i++) {
         let found = true;
         // Check if substring matches starting from index i
         for (let j = 0; j < substring.length; j++) {
