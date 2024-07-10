@@ -3,14 +3,14 @@ function replaceStr(str, substr) {
     let result = "";
     let index = 0;
     for (let i = 0; i < str.length; i++) {
-        let match = true;
+        let found = true;
         for (let j = 0; j < substr.length; j++) {
             if (str[i + j] !== substr[j]) {
-                match = false;
+                found = false;
                 break;
             }
         }
-        if (match) {
+        if (found==true) {
             result += str2; 
             i += substr.length - 1;
         } else {
