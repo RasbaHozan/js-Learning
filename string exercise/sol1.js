@@ -11,6 +11,6 @@ for ( let i=0; i<str.length;i++) {
 }
 return array ;
 }
-let str = "my name";
+let str = "my name is rasba ";
 let splitLength=2;
 console.log(solution(str));
