@@ -35,7 +35,7 @@ let studentsData = {
     ]
 };
 
-function filter1(students) {
+function studentsGot1F(students) {
     let filteredStudents = [];
     for (let i = 0; i < students.length; i++) {
         let student = students[i];
@@ -52,7 +52,7 @@ function filter1(students) {
     return filteredStudents;
 }
 
-function filter2(students) {
+function studentsWithoutAllGradeA(students) {
     let filteredStudents = [];
     for (let i = 0; i < students.length; i++) {
         let student = students[i];
@@ -75,7 +75,7 @@ function filter2(students) {
 
 
 
-function filter3(students) {
+function studentsAgeGreaterThan20(students) {
     let filteredStudents = [];
     for (let i = 0; i < students.length; i++) {
         let student = students[i];
@@ -87,7 +87,7 @@ function filter3(students) {
 }
 
 
-function filter4(students) {
+function studentsNotLivingInNYC(students) {
     let filteredStudents = [];
     for (let i = 0; i < students.length; i++) {
         let student = students[i];
@@ -99,10 +99,10 @@ function filter4(students) {
 }
 
 // Applying filters to the studentsJsonData
-let filtered1 = filter1(studentsData.students);
-let filtered2 = filter2(studentsData.students);
-let filtered3 = filter3(studentsData.students);
-let filtered4 = filter4(studentsData.students);
+let filtered1 = studentsGot1F(studentsData.students);
+let filtered2 = studentsWithoutAllGradeA(studentsData.students);
+let filtered3 = studentsAgeGreaterThan20(studentsData.students);
+let filtered4 = studentsNotLivingInNYC(studentsData.students);
 
 console.log("Students who didn't get F in any two courses");
 console.log(filtered1);
