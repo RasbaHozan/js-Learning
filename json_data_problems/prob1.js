@@ -35,7 +35,7 @@ let studentsData = {
     ]
 };
 
-function studentsGot1F(students) {
+function studentsWithFewerF(students) {
     let filteredStudents = [];
     for (let i = 0; i < students.length; i++) {
         let student = students[i];
@@ -78,7 +78,7 @@ function studentsWithoutAllGradeA(students) {
 function studentsAgeGreaterThan20(students) {
     let filteredStudents = [];
     for (let i = 0; i < students.length; i++) {
-        let student = students[i];
+                let student = students[i];
         if (student.age > 20) {
             filteredStudents[filteredStudents.length] = student;
         }
@@ -99,7 +99,7 @@ function studentsNotLivingInNYC(students) {
 }
 
 // Applying filters to the studentsJsonData
-let filtered1 = studentsGot1F(studentsData.students);
+let filtered1 = studentsWithFewerF(studentsData.students);
 let filtered2 = studentsWithoutAllGradeA(studentsData.students);
 let filtered3 = studentsAgeGreaterThan20(studentsData.students);
 let filtered4 = studentsNotLivingInNYC(studentsData.students);
