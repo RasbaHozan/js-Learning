@@ -9,8 +9,8 @@ class MathUtils {
   }
   
   // Testing the MathUtils class
-  const num1 = 12;
-  const num2 = 2;
+  let num1 = 12;
+  let num2 = 2;
   
   console.log(`Addition: ${MathUtils.add(num1, num2)}`); 
  
