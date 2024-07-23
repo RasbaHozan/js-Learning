@@ -1,56 +1,58 @@
 class Car {
   constructor(make, model, year) {
-    this.make = make;
-    this.model = model;
-    this.year = year;
+      this._make = make;
+      this._model = model;
+      this._year = year;
   }
 
-  // Getter methods
   get make() {
-    return this.make;
+      return this._make;
+  }
+
+  set make(newMake) {
+      this._make = newMake;
   }
 
   get model() {
-    return this.model;
-  }  
-
-  get year() {
-    return this.year;
-  }
-
-  // Setter methods
-  set make(newMake) {
-    this.make = newMake;
+      return this._model;
   }
 
   set model(newModel) {
-    this.model = newModel;
+      this._model = newModel;
+  }
+
+  get year() {
+      return this._year;
   }
 
   set year(newYear) {
-    this.year = newYear;
+      this._year = newYear;
   }
 }
 
-// Instantiate multiple car objects
-let car1 = new Car('Toyota', 'Camry', 2020);
-let car2 = new Car('Honda', 'Civic', 2018);
+let myCar = new Car("Honda", "City", 2022);
 
-// Demonstrate usage
-console.log("Car 1:");
-console.log("Make:", car1.getMake());
-console.log("Model:", car1.getModel());
-console.log("Year:", car1.getYear());
+console.log(myCar.make);  
+console.log(myCar.model); 
+console.log(myCar.year);  
 
-console.log("\nCar 2:");
-console.log("Make:", car2.getMake());
-console.log("Model:", car2.getModel());
-console.log("Year:", car2.getYear());
 
-// Changing properties using setters
-car1.setYear(2022);
-car2.setModel('Accord');
 
-// Display updated information
-console.log("\nUpdated Car 1 Year:", car1.getYear());
-console.log("Updated Car 2 Model:", car2.getModel());
+// now Instantiate multiple Car objects
+let car1 = new Car("Honda", "City", 2022);
+let car2 = new Car("Toyota", "Corolla", 2023);
+let car3 = new Car("Kia", "Sportage", 2024);
+
+// Access properties
+console.log(car1.make); 
+console.log(car2.model); 
+console.log(car3.year);  
+
+// update year property
+car1.year = "2024";
+car2.year = "2023";
+car3.year = 2025;
+
+console.log(car1.year);  
+console.log(car2.year);  
+console.log(car3.year);  
